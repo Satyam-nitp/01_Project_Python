@@ -61,7 +61,7 @@ cd calculator-app
 - **`templates/index.html`**: This file contains the structure of the calculator, including buttons for numbers and operations.
 - **`static/style.css`**: This file provides the styling for the calculator, making it visually appealing and responsive.
 - **`static/app.js`**: This JavaScript file manages the logic for handling user interactions such as button clicks, updating the display, and performing calculations on the client side.
-- **`app.py`**: (Optional) This Python file handles the logic for calculations, if you're opting to use a backend.
+- **`app.py`**: This Python file is the main backend, using Flask to process calculation requests from the frontend and return the results. It serves as the bridge between the user interface and the logic.
   
 ## How to Use the Calculator
 
