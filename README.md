@@ -1,29 +1,34 @@
 
 # Calculator Application
 
-This project is a simple web-based calculator built using HTML, CSS, and Python. The calculator performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
+This project is a simple web-based calculator built using HTML, CSS, JavaScript, and Python (Flask). The calculator performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
 ## Project Structure
 
 ```
-├── calculator.html   # The HTML file for the calculator's user interface
-├── styles.css        # The CSS file for styling the calculator
-├── script.py         # The Python file for handling backend calculations (optional)
-├── README.md         # This README file
+├── app.py                 # The Python (Flask) backend file that processes calculations
+├── requirements.txt       # The file listing project dependencies
+├── templates/
+│   └── index.html         # The HTML file for the calculator's user interface
+├── static/
+│   ├── styles.css         # The CSS file for styling the calculator
+│   └── app.js             # The JavaScript file for handling client-side logic
+├── README.md              # This README file
 ```
 
 ## Features
 
 - Basic arithmetic operations: Addition, Subtraction, Multiplication, and Division.
 - User-friendly interface with buttons for number input and operations.
-- Responsive design to fit different screen sizes (using CSS).
-- Backend calculations handled by Python (if applicable).
-  
+- Responsive design using CSS to fit different screen sizes.
+- Backend calculations handled by Python (Flask).
+
 ## Technology Stack
 
 - **HTML**: Defines the structure of the calculator's interface.
 - **CSS**: Styles the calculator to look modern and user-friendly.
-- **Python (optional)**: Handles calculations on the backend.
+- **JavaScript**: Handles client-side logic, including button clicks and display updates.
+- **Python (Flask)**: Manages backend processing and serves the web application.
 
 ## Setup Instructions
 
@@ -34,35 +39,33 @@ git clone https://github.com/your-username/calculator-app.git
 cd calculator-app
 ```
 
-### 2. Run the Application
+### 2. Install Dependencies
 
-#### If you are using only HTML and CSS (no backend):
+Install the Python dependencies listed in `requirements.txt`:
 
-1. Simply open `calculator.html` in a web browser:
+```bash
+pip install -r requirements.txt
+```
 
-   ```bash
-   open calculator.html
-   ```
+### 3. Run the Flask Application
 
-#### If you're using Python for backend calculations:
+Run the Flask app (`app.py`) locally:
 
-1. Ensure you have Python installed (version 3.x is recommended).
-   
-2. Run the Python script (e.g., with Flask or another web framework to serve the application):
+```bash
+python app.py
+```
 
-   ```bash
-   python script.py
-   ```
+### 4. Access the Calculator
 
-3. Open your browser and navigate to `http://localhost:5000` (or the port you have configured) to access the calculator.
+Open your browser and navigate to `http://localhost:5000` to use the calculator.
 
 ## File Descriptions
 
+- **`app.py`**: This Python file is the main backend, using Flask to process calculation requests from the frontend and return the results.
 - **`templates/index.html`**: This file contains the structure of the calculator, including buttons for numbers and operations.
-- **`static/style.css`**: This file provides the styling for the calculator, making it visually appealing and responsive.
+- **`static/styles.css`**: This file provides the styling for the calculator, making it visually appealing and responsive.
 - **`static/app.js`**: This JavaScript file manages the logic for handling user interactions such as button clicks, updating the display, and performing calculations on the client side.
-- **`app.py`**: This Python file is the main backend, using Flask to process calculation requests from the frontend and return the results. It serves as the bridge between the user interface and the logic.
-  
+
 ## How to Use the Calculator
 
 1. Enter numbers using the buttons or your keyboard.
