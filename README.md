@@ -58,9 +58,10 @@ cd calculator-app
 
 ## File Descriptions
 
-- **`calculator.html`**: This file contains the structure of the calculator, including buttons for numbers and operations.
-- **`styles.css`**: This file provides the styling for the calculator, making it visually appealing and responsive.
-- **`script.py`**: (Optional) This Python file handles the logic for calculations, if you're opting to use a backend.
+- **`templates/index.html`**: This file contains the structure of the calculator, including buttons for numbers and operations.
+- **`static/style.css`**: This file provides the styling for the calculator, making it visually appealing and responsive.
+- **`static/app.js`**: This JavaScript file manages the logic for handling user interactions such as button clicks, updating the display, and performing calculations on the client side.
+- **`app.py`**: (Optional) This Python file handles the logic for calculations, if you're opting to use a backend.
   
 ## How to Use the Calculator
 
@@ -73,10 +74,6 @@ cd calculator-app
 - Add support for advanced mathematical functions (square root, exponentiation, etc.).
 - Implement a history feature to track previous calculations.
 - Add unit tests for the Python backend.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Acknowledgements
 
