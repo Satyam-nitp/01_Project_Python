@@ -11,7 +11,7 @@ This project is a simple web-based calculator built using HTML, CSS, JavaScript,
 ├── templates/
 │   └── index.html         # The HTML file for the calculator's user interface
 ├── static/
-│   ├── styles.css         # The CSS file for styling the calculator
+│   ├── style.css         # The CSS file for styling the calculator
 │   └── app.js             # The JavaScript file for handling client-side logic
 ├── README.md              # This README file
 ```
@@ -63,7 +63,7 @@ Open your browser and navigate to `http://localhost:5000` to use the calculator.
 
 - **`app.py`**: This Python file is the main backend, using Flask to process calculation requests from the frontend and return the results.
 - **`templates/index.html`**: This file contains the structure of the calculator, including buttons for numbers and operations.
-- **`static/styles.css`**: This file provides the styling for the calculator, making it visually appealing and responsive.
+- **`static/style.css`**: This file provides the styling for the calculator, making it visually appealing and responsive.
 - **`static/app.js`**: This JavaScript file manages the logic for handling user interactions such as button clicks, updating the display, and performing calculations on the client side.
 
 ## How to Use the Calculator
